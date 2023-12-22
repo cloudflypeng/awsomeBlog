@@ -15,6 +15,7 @@ const Nav = () => {
       </Link>
       <div className="flex gap-6">
         <Link to="/blog" className="link">blog</Link>
+        <Link to="/demo" className="link">demo</Link>
         <a className="link" href="https://github.com/cloudflypeng" target="_blank" rel="noreferrer">github</a>
         <span className="link" onClick={handleSwitch}>L/D</span>
       </div>

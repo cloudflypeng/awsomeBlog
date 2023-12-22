@@ -9,6 +9,8 @@ import { themeAtom } from './jotai'
 
 
 import Home from './home/index'
+import Demo from './demo'
+
 import Nav from './nav'
 import BlogList from './blog'
 import Article from './blog/detail'
@@ -27,6 +29,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/blog" element={<BlogList />} />
+            <Route path="/demo" element={<Demo />} />
             <Route path="/view/:mdTitle" element={<Article />} />
           </Routes>
         </BrowserRouter>
