@@ -5,6 +5,10 @@ import App from './App.jsx'
 import 'virtual:uno.css'
 import './index.css'
 
+import gsap from "gsap";
+import TextPlugin from "gsap/TextPlugin";
+gsap.registerPlugin(TextPlugin)
+
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <App />

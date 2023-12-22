@@ -9,7 +9,7 @@ const TitleItem = ({ title, author, time }) => {
   }
 
   return (
-    <li onClick={toView}>
+    <li className='list-handle' onClick={toView}>
       <h3 className="link mb-1">{title}</h3>
       <span className="opacity-50 text-xs">{author}--{time}</span>
     </li>

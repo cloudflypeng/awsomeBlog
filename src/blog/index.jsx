@@ -7,10 +7,15 @@ import { themeAtom } from '../jotai'
 import { BLOG_MENU } from './blogmune'
 import TitleItem from './title-item'
 
+import useGsapList from '../gsap/useList'
+
+
 const BlogList = () => {
 
   const [theme] = useAtom(themeAtom)
   const isDark = theme === 'dark'
+
+  useGsapList({ item: '.list-handle' })
 
   return (
     <div className="relative grow w-full flex justify-center text-base font-mono mt-20 z-10">
@@ -22,7 +27,8 @@ const BlogList = () => {
       </section>
       {/* portal the bg Spline, so that can use different Spline in every part  */}
       {createPortal(isDark ?
-        <Spline className='absolute  top-0 w-full pointer-events-none' scene="https://prod.spline.design/wyM9lGKmi3SAhcR1/scene.splinecode" /> :
+        null :
+        // <Spline className='absolute  top-0 w-full pointer-events-none' scene="https://prod.spline.design/wyM9lGKmi3SAhcR1/scene.splinecode" /> :
         <Spline className='absolute  top-0 w-full pointer-events-none' scene="https://prod.spline.design/BrXOrIUjiT4W9ILh/scene.splinecode" />,
         document.getElementById('bgPortal')
       )}
