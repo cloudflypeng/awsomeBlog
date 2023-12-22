@@ -1,5 +1,5 @@
 import {
-  BrowserRouter,
+  HashRouter,
   Routes,
   Route
 } from "react-router-dom";
@@ -24,7 +24,7 @@ function App() {
   return (
     <div className={theme + ' h-full'}>
       <div className={`bg-base h-full flex flex-col`}>
-        <BrowserRouter>
+        <HashRouter>
           <Nav />
           <Routes>
             <Route path="/" element={<Home />} />
@@ -32,7 +32,7 @@ function App() {
             <Route path="/demo" element={<Demo />} />
             <Route path="/view/:mdTitle" element={<Article />} />
           </Routes>
-        </BrowserRouter>
+        </HashRouter>
         {/* <Home /> */}
       </div>
     </div>
