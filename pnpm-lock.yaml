@@ -12,6 +12,7 @@ specifiers:
   eslint-plugin-react-hooks: ^4.6.0
   eslint-plugin-react-refresh: ^0.4.5
   gsap: ^3.12.4
+  immutable: ^5.0.0-beta.4
   jotai: ^2.6.0
   marked: ^11.1.0
   react: ^18.2.0
@@ -27,6 +28,7 @@ dependencies:
   '@splinetool/react-spline': registry.npmmirror.com/@splinetool/react-spline/2.2.6_9d03306922268d1cb2024a9b7f4ca005
   '@splinetool/runtime': registry.npmmirror.com/@splinetool/runtime/1.0.9
   gsap: registry.npmmirror.com/gsap/3.12.4
+  immutable: registry.npmmirror.com/immutable/5.0.0-beta.4
   jotai: registry.npmmirror.com/jotai/2.6.0_821af9f67289fbf97147f1a98d74b01c
   marked: registry.npmmirror.com/marked/11.1.0
   react: registry.npmmirror.com/react/18.2.0
@@ -2725,6 +2727,12 @@ packages:
     version: 5.3.0
     engines: {node: '>= 4'}
     dev: true
+
+  registry.npmmirror.com/immutable/5.0.0-beta.4:
+    resolution: {integrity: sha512-sl9RE3lqd2LoQSESc8VV0k8qE9y57iT7dinq3Q+8mR2dqReHDZlgUrudzmFfZhDXBLXlNJMVWv3SG1YpQIokig==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/immutable/-/immutable-5.0.0-beta.4.tgz}
+    name: immutable
+    version: 5.0.0-beta.4
+    dev: false
 
   registry.npmmirror.com/import-fresh/3.3.0:
     resolution: {integrity: sha512-veYYhQa+D1QBKznvhUHxb8faxlrwUnxseDAbAp457E0wLNio2bOSKnjYDhMj+YiAq61xrMGhQk9iXVk5FzgQMw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/import-fresh/-/import-fresh-3.3.0.tgz}
