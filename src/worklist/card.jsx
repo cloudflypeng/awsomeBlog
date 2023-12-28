@@ -61,7 +61,7 @@ const Card = ({ name, list, onChange, onDel }) => {
 
   if (isEdit) {
     return (
-      <section className='w-70 min-h-80 h-80 card-base text-base shadow-lg flex'>
+      <section className='w-70 min-h-80 h-80 card-base text-base shadow-lg hover:shadow-2xl flex'>
         <form
           className='w-full grow-1 flex flex-col p-2'
           ref={form}
@@ -105,32 +105,35 @@ const Card = ({ name, list, onChange, onDel }) => {
   }
 
   return (
-    <section className='w-70 min-h-80 h-80 card-base text-base shadow-lg flex'>
+    <section className='w-70 min-h-80 h-80 card-base text-base shadow-lg flex link' onClick={openAll}>
       <div className='w-full grow-1 flex flex-col p-2'>
         <div className='flex mb-2'>
-          <div className='text-xl'>{name}</div>
+          <div className='text-xl  font-sans'>{name}</div>
         </div>
         {/* 网址列表 */}
         <div className='grow-1 gap-1'>
           {list?.map((r, i) => (
-            <div
+            <a
               key={i}
-              className='w-4/5 text-sm overflow-hidden text-ellipsis whitespace-nowrap'
+              href={r}
+              target='_blank'
+              onClick={(e)=> e.stopPropagation()}
+              className='block w-4/5 link text-sm overflow-hidden text-ellipsis whitespace-nowrap opacity-30' rel="noreferrer"
             >
               {r}
-            </div>
+            </a>
           ))}
         </div>
-        <div className='text-sm'>
+        <div className='text-sm opacity-80'>
           <a className='px-2 link' onClick={del}>
-            删除
+            del
           </a>
           <a className='px-2 link' onClick={edit}>
-            编辑
+            edit
           </a>
-          <a className='px-2 link' onClick={openAll}>
-            全部打开
-          </a>
+          {/* <a className='px-2 link' onClick={openAll}>
+            open
+          </a> */}
         </div>
       </div>
     </section>

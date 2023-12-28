@@ -37,9 +37,14 @@ const WorkList = () => {
       })}
       <section
         onClick={addGroup}
-        className='w-70 min-h-80 h-80 card-base text-base justify-center items-center shadow-lg flex'
+        className='w-70 min-h-80 h-80 card-base link justify-center items-center shadow-lg flex flex-col'
       >
-        添加
+        <p>click this card to add</p>
+        <p>
+        click other card to open All
+        </p>
+        <p>click link to open one</p>
+
       </section>
     </section>
   );
