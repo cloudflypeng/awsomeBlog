@@ -25,7 +25,7 @@ const Article = () => {
   }, [mdTitle])
 
   return (
-    <div className="article mx-auto text-base">
+    <article className="article mx-auto text-base">
       <h2>
         {mdTitle}
         <span className="opacity-50 text-xs mx-5">{message.author}--{message.time}</span>
@@ -34,7 +34,7 @@ const Article = () => {
       <Markdown remarkPlugins={[remarkGfm]}>
         {article}
       </Markdown>
-    </div>
+    </article>
   )
 }
 

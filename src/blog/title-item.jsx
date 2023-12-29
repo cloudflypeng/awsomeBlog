@@ -9,9 +9,9 @@ const TitleItem = ({ title, author, time }) => {
   }
 
   return (
-    <li className='list-handle' onClick={toView}>
-      <h3 className="link mb-1">{title}</h3>
-      <span className="opacity-50 text-xs">{author}--{time}</span>
+    <li className='list-handle my-5' onClick={toView}>
+      <h3 className="link inline mb-1">{title}</h3>
+      <div className="opacity-50 text-xs pl-6">{author}--{time}</div>
     </li>
   )
 }
