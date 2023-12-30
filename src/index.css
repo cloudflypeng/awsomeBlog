@@ -10,3 +10,6 @@ body {
   display: block !important;
   visibility: visible !important;
 }
+* ::-webkit-scrollbar{
+  display: none;
+}

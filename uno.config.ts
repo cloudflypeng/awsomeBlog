@@ -4,7 +4,7 @@ import { defineConfig } from 'unocss';
 export default defineConfig({
   // ...UnoCSS options
   shortcuts: {
-    'switch-animation': 'transition duration-300',
+    'switch-animation': 'transition duration-500',
     'bg-base': 'bg-[#ffffff] dark:bg-[#000000] switch-animation',
     'card-base': 'bg-[#ffffff] dark:bg-[#10101a] switch-animation',
     'text-base': 'text-[#20202a] dark:text-[#f0f0f0] switch-animation',

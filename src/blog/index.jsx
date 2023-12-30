@@ -27,8 +27,8 @@ const BlogList = () => {
       </section>
       {/* portal the bg Spline, so that can use different Spline in every part  */}
       {createPortal(isDark ?
-        null :
-        // <Spline className='absolute  top-0 w-full pointer-events-none' scene="https://prod.spline.design/wyM9lGKmi3SAhcR1/scene.splinecode" /> :
+        // null :
+        <Spline className='absolute  top-0 w-full pointer-events-none' scene="https://prod.spline.design/wyM9lGKmi3SAhcR1/scene.splinecode" /> :
         <Spline className='absolute  top-0 w-full pointer-events-none' scene="https://prod.spline.design/BrXOrIUjiT4W9ILh/scene.splinecode" />,
         document.getElementById('bgPortal')
       )}
