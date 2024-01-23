@@ -1,5 +1,5 @@
-import { createPortal } from 'react-dom';
-import Spline from '@splinetool/react-spline';
+// import { createPortal } from 'react-dom';
+// import Spline from '@splinetool/react-spline';
 
 import { useAtom } from 'jotai'
 import { themeAtom } from '../jotai'
@@ -12,8 +12,8 @@ import useGsapList from '../gsap/useList'
 
 const BlogList = () => {
 
-  const [theme] = useAtom(themeAtom)
-  const isDark = theme === 'dark'
+  // const [theme] = useAtom(themeAtom)
+  // const isDark = theme === 'dark'
 
   useGsapList({ item: '.list-handle' })
 
@@ -26,12 +26,6 @@ const BlogList = () => {
         })}
       </section>
       {/* portal the bg Spline, so that can use different Spline in every part  */}
-      {createPortal(isDark ?
-        // null :
-        <Spline className='absolute  top-0 w-full pointer-events-none' scene="https://prod.spline.design/wyM9lGKmi3SAhcR1/scene.splinecode" /> :
-        <Spline className='absolute  top-0 w-full pointer-events-none' scene="https://prod.spline.design/BrXOrIUjiT4W9ILh/scene.splinecode" />,
-        document.getElementById('bgPortal')
-      )}
     </div>
   )
 }

@@ -117,14 +117,14 @@ const Card = ({ name, list, onChange, onDel }) => {
               key={i}
               href={r}
               target='_blank'
-              onClick={(e)=> e.stopPropagation()}
+              onClick={(e) => e.stopPropagation()}
               className='block w-4/5 link text-sm overflow-hidden text-ellipsis whitespace-nowrap opacity-30' rel="noreferrer"
             >
               {r}
             </a>
           ))}
         </div>
-        <div className='text-sm opacity-80'>
+        <div className='text-sm opacity-80' onClick={(e) => e.stopPropagation()}>
           <a className='px-2 link' onClick={del}>
             del
           </a>
