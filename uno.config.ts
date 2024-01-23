@@ -11,6 +11,7 @@ export default defineConfig({
     'switch-label-base': 'bg-gray-200 dark:bg-gray-800 switch-animation',
     'switch-span-base': 'bg-white dark:bg-gray-300 switch-animation',
     link: 'cursor-pointer select-none opacity-75 hover:opacity-100 text-base no-underline',
+    "social-link": 'text-dark-50 dark:text-light-50 hover:text-dark-100 dark:hover:text-light-100',
     article: 'w-3/4 md:w-2/5',
     'border-base': 'border-[#20202a] border:text-[#f0f0f0] switch-animation',
   },

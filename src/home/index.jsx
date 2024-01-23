@@ -25,13 +25,13 @@ const Home = () => {
         <div>
           <h3 >Social media</h3>
           <div className="flex text-3xl gap-4">
-            <a className="text-light-50" href="https://github.com/cloudflypeng" target="_blank" rel="noreferrer">
+            <a className="social-link" href="https://github.com/cloudflypeng" target="_blank" rel="noreferrer">
               <FaGithub />
             </a>
-            <a className="text-light-50" href="https://twitter.com/meanc_p" target="_blank" rel="noreferrer">
+            <a className="social-link" href="https://twitter.com/meanc_p" target="_blank" rel="noreferrer">
               <FaSquareXTwitter />
             </a>
-            <a className="text-light-50" href="/img/wechat.jpg" target="_blank">
+            <a className="social-link" href="/img/wechat.jpg" target="_blank">
               <FaWeixin />
             </a>
 
