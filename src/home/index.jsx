@@ -1,8 +1,9 @@
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { FaGithub, FaSquareXTwitter, FaWeixin } from "react-icons/fa6";
-const Home = () => {
+// import MenuBar from "../components/menu";
 
+const Home = () => {
   useGSAP(() => {
     // gsap code here...
     gsap.from([".who"], {
@@ -24,22 +25,26 @@ const Home = () => {
         </p>
         <div>
           <h3 >Social media</h3>
-          <div className="flex text-3xl gap-4">
+          <div className="flex text-2xl gap-4">
             <a className="social-link" href="https://github.com/cloudflypeng" target="_blank" rel="noreferrer">
               <FaGithub />
+              <span className="text-lg mx-2 ">GitHub</span>
             </a>
             <a className="social-link" href="https://twitter.com/meanc_p" target="_blank" rel="noreferrer">
               <FaSquareXTwitter />
+              <span className="text-lg mx-2">Twitter</span>
             </a>
             <a className="social-link" href="/img/wechat.jpg" target="_blank">
               <FaWeixin />
+              <span className="text-lg mx-2">WeChat</span>
             </a>
-
           </div>
         </div>
-
-
-
+        {/* <MenuBar>
+          <div><FaGithub /></div>
+          <FaSquareXTwitter />
+          <FaWeixin />
+        </MenuBar> */}
       </article>
     </section>
   )
